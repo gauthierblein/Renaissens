@@ -1,0 +1,233 @@
+/* Desktop */
+.prestations-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(224, 224, 230), white);
+    margin-bottom: 20px;
+    color: #353535;
+    font-family: 'EB Garamond', serif;
+}
+
+.nav-prestations {
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    width: 90%;
+    margin-left: auto; margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: 'EB Garamond', serif;
+    margin-bottom: 30px;
+    border-bottom: 5px solid rgb(4, 95, 80);
+}
+
+.nav-prestations-link {
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    padding: 2% 4%;
+    text-transform: uppercase;
+    color: rgb(4, 95, 80);
+}
+.nav-prestations-link:hover {
+    cursor: pointer;
+    color: rgb(82, 80, 78);
+}
+
+.prestations-container h2 {
+    font-size: 28px;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #477459;
+}
+
+.prestations-container p {
+    font-size: 16px;
+}
+
+.prestations {
+    width: 90%;
+    margin-left: auto; margin-right: auto;
+}
+
+.prestation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prestation-text {
+    width: 75%;
+}
+
+.prestation-text>div {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.prestation-img {
+    width: 250px;
+    height: 250px;
+}
+.prestation-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.seminaires {
+    width: 65%;
+    margin-left: auto; margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    border-top: solid 1px gray;
+    padding: 2% 4%;
+}
+
+.seminaires-type {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.seminaires-type-text1 {
+    width: 70%;
+    text-align: right;
+}
+
+
+.seminaires-title, .ateliers-title {
+    font-size: 24px;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    margin-bottom:8px;
+    color: #477459;
+}
+
+.seminaires-type-img {
+    width: 150px;
+    height: 150px;
+}
+.seminaires-type-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.meals-title {
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.hebergements-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    width: 82vw;
+    margin-left: auto; margin-right: auto;
+}
+.hebergement {
+    width: 20vw;
+    height: 20vw;
+}
+
+.hebergement img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 5px rgb(200, 204, 197);
+}
+
+.kidsactivities {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: auto; margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kidsactivities-img{
+    width: 250px;
+    height: 200px;
+}
+.kidsactivities-img img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kidsactivities-text {
+    width: 70%;
+}
+
+.kidsactivities-text ul {
+    margin-left: 3vw;
+}
+
+.kidsactivities-title {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.ateliers {
+    display: flex;
+    flex-direction: column;
+}
+
+.ateliers-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 250px;
+    margin-bottom: 30px;
+    border-top: solid 1px grey;
+}
+
+.ateliers-type ul {
+    margin-left: 3vw;
+    margin-top: 10px;
+}
+
+.ateliers-type-text2 {
+    width: 80%;
+    text-align: right;
+}
+
+.ateliers-type-img {
+    width: 150px;
+    height: 150px;
+}
+.ateliers-type-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+    .nav-prestations {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-prestations-link {
+        font-size: 16px;
+        padding: 2% 4%;
+    }
+}

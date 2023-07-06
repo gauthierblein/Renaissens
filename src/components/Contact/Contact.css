@@ -1,0 +1,106 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2%;
+    height: auto;
+    width: 100%;
+    color: rgb(70, 65, 65);
+}
+
+.contact-container h2 {
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    width: fit-content;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.contact-intro {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-left: auto; margin-right: auto;
+    margin-bottom: 20px;
+    border: 2px solid rgb(4, 95, 80);
+    border-radius: 10px;
+    background: rgb(209, 221, 219);
+}
+
+form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-family: 'EB Garamond', serif;
+}
+
+input, textarea {
+    padding: 8px;
+    background: transparent;
+    color: white;
+    border: solid 2px white;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-family: 'EB Garamond', serif;
+}
+input:hover {
+    outline: none;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.sendButton {
+    color: white;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 8px 8px 18px;
+    border-radius: 6px;
+    background: linear-gradient(to right, rgb(81, 167, 152), rgb(4, 95, 80));
+    opacity: 0.92;
+    margin-bottom: 20px;
+}
+    .sendButton:hover {
+    opacity: 1;
+    transition: 300ms
+    }
+
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+    .contact {
+        height: auto;
+        width: 95%;
+        margin-left: auto; margin-right: auto;
+    }
+    .contact-container {
+        width: 100%;
+    }
+    .contact-container h2 {
+        margin-top: 80px;
+        font-size: 28px;
+    }
+    .contact-container p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .input-container {
+        width: 90%;
+        margin-left: auto; margin-right: auto;
+    }
+    form {
+        width: 90%;
+    }
+}
