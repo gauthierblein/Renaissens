@@ -63,14 +63,15 @@
     }
     .nav-home {
         position: absolute;
-        top: -125px;
+        flex-direction: column;
+        top: -150px;
         right: 5%;
-        width: 40%;  
+        width: 45%;  
     }
     .nav-home-link {
         text-decoration: none;
         font-weight: 800;
-        font-size: 14px;
+        font-size: 12.5px;
         padding: 2% 1%;
     }
 }

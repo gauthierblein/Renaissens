@@ -1,5 +1,5 @@
 import { Link } from "react-scroll"
-import Header from "../../components/Header"
+import Header from "../../components/Header/header"
 import Intervenants from "../../components/IntervenantsDiapo/intervenantsDiapo"
 import SlideShow from "../../components/SlideShow/slideShow"
 import './partners.css'
@@ -58,6 +58,12 @@ import grandesTerresMain from '../../assets/img/lesGrandesTerres-main.jpg'
         "subDescription" : "https://www.izenshiatsu.com/",
         "pic": "https://i.postimg.cc/Zq74CY00/catherine-zabay.jpg"
       },
+      {
+        "name": "Gauthier B Trainer",
+        "description" : "Group Trainer et Personal Trainer - Spécialiste de la remise en forme et de la préparation physique",
+        "subDescription" : "https://gbtrainer.eu»",
+        "pic": "https://i.postimg.cc/pr4mcLgs/gb-Trainer.jpg"
+      }
     ]
 
     const facility = [

@@ -43,7 +43,7 @@ function Intervenants(current) {
                   <h3>{current.props[index].name}</h3>
                   <p className='intervenants__description'>{current.props[index].description}</p>
                   <br />
-                  <p>{current.props[index].subDescription}</p>
+                  <p className='intervenants__subDescription'>{current.props[index].subDescription}</p>
                 </div>
                 <img className='intervenants__img' src={current.props[index].pic} alt="imageSlider"/>
             </div>               

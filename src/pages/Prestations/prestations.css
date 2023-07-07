@@ -230,4 +230,54 @@
         font-size: 16px;
         padding: 2% 4%;
     }
+    .prestations {
+        width: 94%;
+    }
+    .prestation {
+        flex-direction: column;
+        height: auto;
+    }
+    .prestation-text {
+        width: 100%;
+    }
+    .seminaires {
+        width: 100%;
+        margin-bottom: 80px;
+        padding: 1%;
+    }
+    .prestation-img, .kidsactivities-img {
+        width: 80vw;
+        height: 80vw;
+        margin-top: 15px;
+        margin-left: auto; margin-right: auto;
+    }
+    .prestation-img img, .kidsactivities-img img {
+        width: 80vw;
+        height: 80vw;
+        object-fit: cover;
+    }
+    .hebergements-gallery {
+        width: 100%;
+    }
+    .hebergement {
+        width: 22vw;
+        height: 22vw;
+    }
+    .kidsactivities {
+        flex-direction: column;
+    }
+    .kidsactivities-text {
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .ateliers-type {
+        height: auto;
+        align-items: start;
+        padding-top: 20px;
+    }
+    .ateliers-type-img, .ateliers-type-img img {
+        width: 80px;
+        height: 80px;
+    }
 }

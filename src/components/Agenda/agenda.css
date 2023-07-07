@@ -19,6 +19,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .event__container img {
@@ -64,5 +65,8 @@
     }
     .event__container img {
         width: 60%;
+    }
+    .event_details {
+        width: 90%;
     }
 }

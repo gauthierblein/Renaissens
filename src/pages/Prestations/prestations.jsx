@@ -1,5 +1,5 @@
 import { Link } from "react-scroll"
-import Header from "../../components/Header"
+import Header from "../../components/Header/header"
 import './prestations.css'
 
 // Images

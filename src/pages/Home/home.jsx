@@ -1,6 +1,6 @@
 import { Link } from "react-scroll"
 
-import Header from "../../components/Header"
+import Header from "../../components/Header/header"
 import Banner from "../../components/Banner/banner"
 import Agenda from "../../components/Agenda/agenda"
 import About from "../../components/About/index"

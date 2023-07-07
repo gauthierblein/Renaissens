@@ -45,7 +45,7 @@ form {
 input, textarea {
     padding: 8px;
     background: transparent;
-    color: white;
+    color: rgb(68, 66, 66);
     border: solid 2px white;
     border-radius: 6px;
     margin-bottom: 10px;
