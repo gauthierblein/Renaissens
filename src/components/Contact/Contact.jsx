@@ -9,7 +9,7 @@ const Contact = () => {
 
         <div className="input-container">
           <form
-            action="https://getform.io/f/61c99527-2b15-42cf-9b55-ad37d2f7daa6"
+            action="https://getform.io/f/92f632d9-5a30-4c37-b3e6-a4d033638ffe"
             method="POST"
           >
             <input type="text" name="name" placeholder="Votre nom"/>

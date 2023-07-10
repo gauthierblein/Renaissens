@@ -4,6 +4,8 @@ import Header from "../../components/Header/header"
 import Banner from "../../components/Banner/banner"
 import Agenda from "../../components/Agenda/agenda"
 import About from "../../components/About/index"
+import Actu from "../../components/Actu/actu"
+import Events from "../../components/Events/events"
 import Contact from "../../components/Contact/Contact"
 import image from '../../assets/img/renaissens-banner.jpg'
 import './home.css'
@@ -27,18 +29,11 @@ function Home() {
           <Link to ="contact" className="nav-home-link">Contact</Link>
         </div>
 
-        <div name="actu" className="actu-container">
-          <h2>Actualité</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde inventore molestiae expedita, commodi incidunt, quae cum quibusdam, voluptatem quasi vero at adipisci quos dolore? Itaque nobis ipsum voluptatem eveniet temporibus.</p>
-          <br />
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere facilis iste labore tempore consequuntur inventore voluptatibus eaque, cumque, mollitia autem, omnis provident temporibus repellendus amet dolor similique reprehenderit doloribus rerum?</p>
-            <br />
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde inventore molestiae expedita, commodi incidunt, quae cum quibusdam, voluptatem quasi vero at adipisci quos dolore? Itaque nobis ipsum voluptatem eveniet temporibus.</p>
-          <br />
-        </div>
+        <Actu />
+        <Events />
 
-        <Agenda/>
-        <About/>
+        <Agenda />
+        <About />
 
         <div name="testimonials" className="actu-container">
           <h2>Ils parlent de nous</h2>

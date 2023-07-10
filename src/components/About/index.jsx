@@ -6,12 +6,12 @@ import './about.css'
 const team = [
   {
     picture: sandraPic,
-    nom: 'Sandra O',
-    body: 'Fondateur et gérant de la société en 2020.',
+    nom: 'Sandra OCTUVON',
+    body: 'Fondatrice de l association en 2019.',
   },
   {
     picture: gbPic,
-    nom: 'Gauthier B',
+    nom: 'Gauthier BLEIN',
     body: 'Developpeur et gestionnaire du site depuis 2023',
     link: 'https://bleingauthierdev.com/'
   }

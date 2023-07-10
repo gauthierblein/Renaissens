@@ -56,7 +56,6 @@
 @media screen and (max-width: 768px) {
     .agenda__container h2 {
         font-size: 24px;
-        margin-top: 160px;
         text-decoration:underline;
     }
     .event__container {
