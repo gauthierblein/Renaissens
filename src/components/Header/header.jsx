@@ -12,7 +12,7 @@ function Header() {
 
   return (
   
-    <header >
+    <header className={(menuOpened===true && mobile===true) ? 'nav-low' : 'nav-high'} >
 
       <NavLink className="header__logo" to="/">
         <img src={logo} alt="logo" />

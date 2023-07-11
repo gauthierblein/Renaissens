@@ -1,4 +1,4 @@
-.actu-container {
+.testimonials {
     width: 100%;
     padding: 2%;
     display: flex;
@@ -6,13 +6,13 @@
     margin-bottom: 20px;
 }
 
-.news-container {
+.testimonials-container {
     display: flex;
     flex-direction: column-reverse;
     gap: 1rem;
 }
 
-.post {
+.testimonial {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
@@ -21,70 +21,77 @@
     padding-top: 10px;
 }
 
-.post-infos {
+.testimonial-infos {
     display: flex;
     flex-direction: column;
     font-size: 16px;
     line-height: 24px;
     width: 70vw;
+    padding: 2%;
 }
 
-.post-infos h3 {
+
+.testimonial-infos h3, .testimonial-infos h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.post-link {
+.testimonial-desription {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.testimonial-link {
     font-size: 16px;
     text-decoration: underline;
     font-style: italic;
     font-weight: 500;
     margin-top: 10px;
 }
-.post-link:hover {
+.testimonial-link:hover {
     cursor: pointer;
     color: rgb(167, 101, 230);
     transition: .3s ease;
 }
 
-.post-img {
-    width: 25vw;
-    height: 25vw;
+.testimonial-img {
+    width: 20vw;
+    height: 20vw;
 }
 
-.post-pic{
-    width: 25vw;
-    height: 25vw;
+.testimonial-pic{
+    width: 20vw;
+    height: 20vw;
     object-fit: cover;
 }
 
 
 /* Mobiles */
 @media screen and (max-width: 768px) {
-    .actu-container {
+    .testimonials  {
         margin-top: 50vh;
     }
-    .news-title {
+    .testimonials-title {
         font-size: 24px;
     }
-    .news-container {
+    .testimonials-container {
         padding: 1% 2%;
         padding: .5rem;
     }
-    .post-infos {
+    .testimonial-infos {
         font-size: 12px;
         line-height: 16px;
         width: 65vw;
     }
     
-    .post-infos h2 {
+    .testimonial-infos h3 , .testimonial-infos h3 {
         font-size: 18px;
     }
     
-    .post-link {
+    .testimonial-link {
         font-size: 14px;
     }
-    .post-img, .post-pic{
+    .testimonial-img, .testimonial-pic{
         width: 30vw;
         height: 30vw;
     }

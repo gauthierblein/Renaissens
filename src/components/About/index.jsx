@@ -1,6 +1,10 @@
+import { FaLinkedin } from "react-icons/fa";
+
+import './about.css'
+
 import gbPic from '../../assets/img/gbPic.jpg'
 import sandraPic from '../../assets/img/sandra-pic.png'
-import './about.css'
+
 
 
 const team = [
@@ -8,12 +12,13 @@ const team = [
     picture: sandraPic,
     nom: 'Sandra OCTUVON',
     body: 'Fondatrice de l association en 2019.',
+    linkedIn: "https://www.linkedin.com/in/sandra-octuvon-b3865161/"
   },
   {
     picture: gbPic,
     nom: 'Gauthier BLEIN',
     body: 'Developpeur et gestionnaire du site depuis 2023',
-    link: 'https://bleingauthierdev.com/'
+    linkedIn: 'https://www.linkedin.com/in/gauthier-blein-98a16b279/'
   }
 ]
 
@@ -24,17 +29,72 @@ const team = [
         <h2>Nous connaître</h2>
         <h3>L'équipe</h3>
         {team.map((teamInfos, index) => {
-          return <a href={teamInfos.link} className="teamInfos" key={index}>
+          return <div className="teamInfos" key={index}>
               <img src={teamInfos.picture} alt="" />
               <div className="teamInfos-text">
                 <h4>{teamInfos.nom}</h4>
                 <p href={teamInfos.link}>{teamInfos.body}</p>
+              </div>
+              <a href={teamInfos.linkedIn}><FaLinkedin className='socialMedias-link' size={30} /></a>
             </div>
-          </a>
         })}
         <br />
-        <h3>Valeurs</h3>
-          <p>L’association RENAIS’SENS vous propose de vivre une expérience unique pour donner du sens à nos actions,  améliorer notre rapport au travail, repenser nos organisations et compléter la formation des jeunes.</p>
+        <div className="sandra">
+          <h3>Qui est Sandra ?</h3>
+          <div className="sandra-box">
+            <div className="sandra-box-text">
+              <p>Sandra commence sa carrière dans le secteur bancaire. Diplômée d’un Programme Grande École et certifiée en gestion de projet, elle s’oriente ensuite dans les métiers du conseil en ingénierie, un secteur en pleine croissance, stimulant mais qui connaît aussi quelques difficultés qu’elle tente de transformer.</p>
+              <p>Guidée par des questionnements sur le sens, par l’impact des actions et par l’énergie collective Sandra a développé un engagement sociétal fort.</p>
+              <br />
+              <p>En 2017, elle vit une expérience professionnelle particulière qui déclenche une prise de conscience, la repositionne et lui permet d’identifier comment mettre à profit son énergie au service du collectif. Consciente des limites du coaching en management tel qu’il est pratiqué en interne au sein des entreprises, elle décide d’apporter des réponses à ses questionnements en expérimentant et découvrant d’autres méthodes de travail et de connaissance de soi.</p>
+              <br />
+              <p>Celles que l’école classique ne nous apporte pas encore.</p>
+              <br />
+            </div>
+            <div className="sandra-box-img">
+              <img src={sandraPic} alt="Sandra Octuvon" />
+              <p className="italic">Sandra OCTUVON, Fondatrice de l’association RENAIS’SENS</p>
+            </div>
+          </div>
+          <p>Elle rencontre Marc de la Ménardière, réalisateur, expérimente un stage sur la quête de sens. Elle comprend que l’énergie d’un groupe et la puissance d’un lieu favorisant la reconnexion à la nature et à soi, permet de libérer ses potentiels et de mieux s’ouvrir aux autres.</p>
+          <p>Elle intègre l’importance du « lâcher prise » puis de la « libération de l’égo » et acquiert des outils permettant de mieux se connaître, d’enclencher une dynamique de groupe et surtout de la transmettre.</p>
+          <p>Elle se forme en art thérapie et fonde l’association Renais’sens pour aider la transition sociale en s’appuyant sur deux leviers les organisations et la formation des jeunes.</p>
+          <br />
+          <p>En 2019, Sandra quitte son employeur avec l’envie d’entreprendre différemment.</p>
+          <p>Elle s’associe avec les fondateurs d’une société de conseil engagée qui devient ensuite certifiée Bcorp*, pour incarner, faire vivre et partager ses valeurs en tant que dirigeante :</p>
+          <br />
+          <p className="italic">« Il me paraissait important de me sentir alignée et inspirée pour mener à bien ces deux projets sur lesquels il y a de nombreuses synergies à créer.</p>
+          <br />
+          <p className="italic">Je me préoccupe du monde dans lequel les générations à venir vont grandir, de ce qu’on leur transmet et de ce qu’on va leur laisser.</p>
+          <br />
+          <p className="italic">Comment aider les jeunes à appréhender le monde du travail ? Comment les organisations peuvent-elles adapter leur management face aux écarts générationnels et à l’urgence climatique qui gronde ?</p>
+          <br />
+          <p className="italic">J’oeuvre en démontrant qu’une croissance raisonnée et raisonnable est possible : nous avons fondé une structure fin 2019 juste avant le premier confinement, 3 ans après, nous avons plus d’une cinquantaine de collaborateurs avec une stratégie engagée, consciente et des initiatives concrètes.</p>
+          <br />
+          <p className="italic">Les organisations qui (re)définissent leur raison d’être aujourd’hui seront celles qui se développeront le mieux demain.</p>
+          <br />
+          <p className="italic">Il m’a semblé important de recentrer mes actions avec résilience et congruence pour les mettre au service d’une entreprise qui s’inscrit dans cette démarche mais surtout de les partager au plus grand nombre afin de contribuer à l’émergence d’un monde meilleur. ».</p>
+          <br />
+          <p>NB : RENAIS’SENS propose des projections/débats de films inspirants sous format « ciné-action » pour faire émerger des prises de conscience et aider chacun à se mettre en lien et en mouvement (rubrique contact pour organiser une projection) :</p>
+          <ul>
+            <li>En Quête de Sens – <span className="italic">Marc De La Ménardiere & Nathanaël Coste 2015</span></li>
+            <li>Les Artistes de La Vie – <span className="italic">Pierre Westelynck 2019</span></li>
+            <li>Le Cercle des Petits Philosophes – <span className="italic">Cecile Denjean & Frédéric Lenoir 2018</span></li>
+            <li>L’Ecole de la Vie – <span className="italic"> Julien Peron 2018</span></li>
+            <li>L’Ame – <span className="italic">Valerie Seguin 2021</span></li>
+            <li>L’Intelligence Intuitive et Spirituelle au travail – <span className="italic">Valerie Seguin 2022</span></li>
+          </ul>
+          <br />
+          <p>Sandra a eu l’honneur de participer à la réalisation de ce dernier film en tant qu’intervenante.</p>
+          <br />
+          <p className="italic">Voir dates des projections onglet « événements ».</p>
+          <br />
+          <br />
+          <p>*Bcorp : Certification et communauté internationale rassemblant les meilleurs entreprises pour le monde. Elles ont la mission de s’engager en faveur du « bien commun »</p>
+          </div>
+
+          <h3>Valeurs</h3>
+            <p>L’association RENAIS’SENS vous propose de vivre une expérience unique pour donner du sens à nos actions,  améliorer notre rapport au travail, repenser nos organisations et compléter la formation des jeunes.</p>
           <br />
           <strong>Nos missions :</strong>
           <ul>

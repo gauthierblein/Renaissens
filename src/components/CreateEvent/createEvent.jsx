@@ -35,8 +35,9 @@ export default function CreateEvent() {
     }
     try {
       const res = await axios.post('http://localhost:4001/create/events', newPost);
-      alert("nouvelle actualité crée")
+      alert("nouvel évènement créé")
       navigate(`/dashboard/`);
+      window.location.reload(true);
     } catch (err) {}
   };
   return (

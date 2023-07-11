@@ -110,7 +110,12 @@
 /* Mobiles */
 @media screen and (max-width: 768px) {
     .gallery-post {
-        height: 200px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    .gallery-data {
+        font-size: 10px;
+        height: auto;
     }
 }
 

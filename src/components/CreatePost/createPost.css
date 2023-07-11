@@ -48,6 +48,12 @@
         font-size: 26px;
         margin-bottom: 10px;
     }
+    .form {
+        height: 60vh;
+        color: black;
+        font-size: 14px; font-weight: 400;
+        margin-bottom: 50px;
+    }
     .form button {
         width: 60%;
         font-size: 18px;

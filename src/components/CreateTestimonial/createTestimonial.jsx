@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom'
 import axios from "axios";
-import './createPost.css'
+import '../../components/CreatePost/createPost.css'
 
 
-export default function CreatePost() {
+export default function CreateTestimonial() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [subDescription, setSubDescription] = useState("");
@@ -32,15 +32,15 @@ export default function CreatePost() {
       } catch (err) {}
     }
     try {
-      const res = await axios.post('http://localhost:4001/create/posts', newPost);
-      alert("nouvelle actualité crée")
+      const res = await axios.post('http://localhost:4001/create/testimonials', newPost);
+      alert("nouveau témoignage créé")
       navigate(`/dashboard/`);
       window.location.reload(true);
     } catch (err) {}
   };
   return (
     <>
-      <h1 className="create-title">Créer actu</h1>
+      <h1 className="create-title">Créer témoignage</h1>
       <div className="form-container">
         <form className="form" onSubmit={handleSubmit}>
 

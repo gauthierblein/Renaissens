@@ -70,9 +70,6 @@
 
 /* Mobiles */
 @media screen and (max-width: 768px) {
-    .actu-container  {
-        margin-top: 50vh;
-    }
     .news-title {
         font-size: 24px;
     }
@@ -83,7 +80,7 @@
     .post-infos, .event-infos {
         font-size: 12px;
         line-height: 16px;
-        width: 65vw;
+        width: 80vw;
     }
     
     .post-infos h2 , .event-infos H2 {
@@ -92,9 +89,11 @@
     
     .post-link {
         font-size: 14px;
+        overflow-wrap: break-word;
+        max-width: 100%;
     }
     .post-img, .post-pic{
-        width: 30vw;
-        height: 30vw;
+        width: 18vw;
+        height: 18vw;
     }
 }

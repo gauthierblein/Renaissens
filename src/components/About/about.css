@@ -37,11 +37,10 @@
   width: 100px;
   margin-right: 15px;
   border-radius: 50px;
-  border: 3px solid transparent;
 }
-.teamInfos img:hover {
-  border: 3px solid #477459;
-  transition: .3s ease-in-out;
+
+.teamInfos-text {
+  margin-right: 15px;
 }
 
 .teamInfos h4 {
@@ -52,6 +51,31 @@
   margin-left: 3vw;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.sandra {
+  margin-bottom: 150px;
+}
+
+.sandra-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.sandra-box-img {
+  width: 20vw;
+  height: 25vw;
+}
+.sandra-box-img img {
+  width: 20vw;
+  height: 25vw;
+  object-fit: cover;
+}
+
+.sandra-box-text {
+  width: 75vw;
 }
 
 .values {
@@ -77,5 +101,21 @@
     }
     .about-container p {
       font-size: 12px;
+    }
+    .sandra-box {
+      flex-direction: column;
+      align-items: center;
+    }
+    .sandra-box-img {
+      width: 60vw;
+      height: 80vw;
+    }
+    .sandra-box-img img {
+      width: 60vw;
+      height: 80vw;
+      object-fit: cover;
+    }
+    .sandra-box-text {
+      width: 80vw;
     }
 }

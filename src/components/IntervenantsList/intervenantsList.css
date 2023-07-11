@@ -7,7 +7,7 @@
 }
 
 /* DIAPO DES INTERVENANTS */
-.intervenants__container {
+.intervenants__diapo {
     margin-left: auto; margin-right: auto;
     margin-top: 15px;
     width: 100%;
@@ -22,22 +22,6 @@
     background-color: rgb(41, 40, 40);
     animation: fadeIn 5000ms;
     animation-iteration-count: infinite;
-    position: relative;
-}
-.intervenants-static {
-    margin-left: auto; margin-right: auto;
-    margin-top: 15px;
-    width: 100%;
-    height: 100vh;
-    background: var(--color-two);
-    border-radius: 10px;
-    margin-top:5px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    background-color: rgb(41, 40, 40);
-    animation: none;
     position: relative;
 }
 
@@ -62,18 +46,10 @@
     border-radius: 10px;
     object-fit: cover;
 }
-
-.diapo-btn {
-    position: absolute;
-    top: 50px; left : 48%;
-    color: white;
-}
-
-
 /* LISTE DES INTERVENANTS */
 .intervenants__list {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   margin-top: 30px;
 }
 
@@ -93,7 +69,7 @@
 }
 
 .intervenant-text {
-  padding: 2% 3%;
+  padding: 0% 2%;
   font-size: 14px;
   color: black;
 }
@@ -116,7 +92,7 @@
 /* Mobiles */
 @media screen and (max-width: 768px) {
   .intervenants__container {
-      flex-direction: column;
+      flex-direction: column-reverse;
   }
   .intervenants__text {
     height: 50%;
@@ -126,11 +102,6 @@
     background-color: rgb(245, 238, 238);
     color: black;
   }
-  .diapo-btn {
-    position: absolute;
-    top: 20px; left : 5px;
-    color: rgb(15, 15, 15);
-}
   
   .intervenants__description {
     font-size: 16px;
@@ -145,6 +116,17 @@
       width: 100%;
       border-radius: 10px;
       object-fit: cover;
+  }
+
+  .intervenants__list {
+    width: 94%;
+    margin-left: auto; margin-right: auto;
+  }
+  .intervenant {
+    width: 100%;
+  }
+  .intervenant-pic {
+    display: none;
   }
 }
   
