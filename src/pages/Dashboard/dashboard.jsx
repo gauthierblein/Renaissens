@@ -1,6 +1,9 @@
 import { Link } from "react-scroll"
 import { NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { useEffect, useState } from "react";
 
+//Components
 import CreatePost from '../../components/CreatePost/createPost'
 import MyPosts from '../../components/MyPosts/myPosts'
 import CreateEvent from "../../components/CreateEvent/createEvent"
@@ -16,6 +19,33 @@ import './dashboard.css'
 
 const Dashboard = () => {
 
+    const [isLoggedin, setIsLoggedin] = useState(false);
+    useEffect(() => {
+    const loggedInUser = localStorage.getItem("authenticated");
+    if (loggedInUser) {
+      setIsLoggedin(true);
+    }
+    }, []);
+
+    const navigate = useNavigate();
+
+    function logOut() {
+        setIsLoggedin(false);
+        localStorage.removeItem("authenticated");
+        navigate(`/`);
+    }
+
+    if (isLoggedin===false) {
+        return <div className="dashboard-unknown">
+                    <p>Non authentifié</p>
+                    <br />
+                    <br />
+                    <p>Accéder à la page d'identification</p>
+                    <br />
+                    <div><NavLink to ="/azertyuiop123456789">S'identifier</NavLink></div>
+                </div>
+    } else {
+
     return (
         <div className="dashboard-container">
             <div className='dashboard-nav'>
@@ -28,7 +58,7 @@ const Dashboard = () => {
                 <Link to ="createIntervenant" className="nav-dashboard-link">Créer un intervenant</Link>
                 <Link to ="editIntervenant" className="nav-dashboard-link">Mes intervenants</Link>
             </div>
-            <NavLink to ="/" className="close-session-btn">Fermer session</NavLink>
+            <button onClick={logOut} className="close-session-btn">Fermer session</button>
             <div name="createPost"><CreatePost /></div>
             <div name="editPost"><MyPosts /></div>
             <div name="createEvent"><CreateEvent /></div>
@@ -39,8 +69,8 @@ const Dashboard = () => {
             <div name="editIntervenant"><MyIntervenants /></div>
 
         </div>
-    )
-
+        )
+    }
 }
 
 export default Dashboard
