@@ -6,11 +6,11 @@ import  "./actu.css"
 
 const Actu = () => {
 
-    const PF = "http://localhost:4001/uploads/";
+    const PF = "https://renaissens-back.adaptable.app/uploads/";
     const [allPosts, setPosts] = useState(null);
   
     useEffect(() => {
-        axios.get('http://localhost:4001/posts/').then((response) => {
+        axios.get('https://renaissens-back.adaptable.app/posts/').then((response) => {
               setPosts(response.data);
               console.log(response)
         });

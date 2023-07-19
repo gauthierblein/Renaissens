@@ -28,11 +28,11 @@ export default function CreatePost() {
       data.append("file", file);
       newPost.cover = filename;
       try {
-        await axios.post('http://localhost:4001/upload', data);
+        await axios.post('https://renaissens-back.adaptable.app/upload', data);
       } catch (err) {}
     }
     try {
-      const res = await axios.post('http://localhost:4001/create/posts', newPost);
+      const res = await axios.post('https://renaissens-back.adaptable.app/create/posts', newPost);
       alert("nouvelle actualité crée")
       navigate(`/dashboard/`);
       window.location.reload(true);

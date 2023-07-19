@@ -24,7 +24,7 @@ export default function CreateIntervenant() {
     };
 
   try {
-      const res = await axios.post('http://localhost:4001/create/intervenants', newPost);
+      const res = await axios.post('https://renaissens-back.adaptable.app/create/intervenants', newPost);
       alert("nouvel intervenant créé")
       navigate(`/dashboard/`)
       window.location.reload(true);

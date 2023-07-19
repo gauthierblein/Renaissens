@@ -2,31 +2,6 @@ import { useState, useRef, useEffect } from 'react'
 import axios from 'axios';
 import "./intDiaporama.css"
 
-
-
-
-
-
-
-
-
-
-
-const peoples = [
-    {
-    "pic":"https://i.postimg.cc/bY774X4s/geraldine-rudy.jpg",
-     "name" : "Geraldine NER"
-    },
-    {
-    "pic" : "https://i.postimg.cc/Vk5HH0x4/alexandra.jpg",
-    "name" : "Alexandra POCENZO"
-    },
-    {
-        "pic" : "https://i.postimg.cc/Hnw3nx3y/Manga-a-BAR.jpg",
-        "name" : "Mangaia BAR"
-    }    
-];
-
 const delay = 4000;
 
 function IntDiaporama() {
@@ -38,7 +13,7 @@ function IntDiaporama() {
 
 
   useEffect(() => {
-    axios.get('http://localhost:4001/intervenants').then((response) => {
+    axios.get('https://renaissens-back.adaptable.app/intervenants').then((response) => {
       setMyIntervenants(response.data);
       setLength(response.data.length);
     });

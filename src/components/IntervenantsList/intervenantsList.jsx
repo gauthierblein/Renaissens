@@ -7,7 +7,7 @@ function Intervenants(current) {
     
   const [myIntervenants, setMyIntervenants] = useState(null);
   useEffect(() => {
-    axios.get('http://localhost:4001/intervenants').then((response) => {
+    axios.get('https://renaissens-back.adaptable.app/intervenants').then((response) => {
       setMyIntervenants(response.data);
       console.log(myIntervenants)
     });

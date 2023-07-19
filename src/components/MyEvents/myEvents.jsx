@@ -7,7 +7,7 @@ import '../MyPosts/myPosts';
 
 
 function MyEvents() {
-    const PF = "http://localhost:4001/uploads/";
+    const PF = "https://renaissens-back.adaptable.app/uploads/";
 
     const [myPosts, setMyPosts] = useState(null);
     const [updatedPost, setUpdatedPost] = useState(
@@ -24,14 +24,14 @@ function MyEvents() {
     const handleShow = () => setShow(true);
 
     useEffect(() => {
-        axios.get('http://localhost:4001/events').then((response) => {
+        axios.get('https://renaissens-back.adaptable.app/events').then((response) => {
           setMyPosts(response.data);
         });
       }, []);
 
       const deletePost = (id) => {
         console.log(id)
-        axios.delete(`http://localhost:4001/deleteevent/${id}`)
+        axios.delete(`https://renaissens-back.adaptable.app/deleteevent/${id}`)
             .then((res) => console.log(res))
             .catch((err) => console.log(err))
         window.location.reload()
@@ -63,7 +63,7 @@ function MyEvents() {
       };
 
       const saveUpdatedPost = () => {
-        axios.put(`http://localhost:4001/updateevent/${updatedPost.id}`, updatedPost)
+        axios.put(`https://renaissens-back.adaptable.app/updateevent/${updatedPost.id}`, updatedPost)
             .then((res) => console.log(res))
             .catch((err) => console.log(err))
         handleClose();

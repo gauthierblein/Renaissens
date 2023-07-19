@@ -30,11 +30,11 @@ export default function CreateEvent() {
       data.append("file", file);
       newPost.cover = filename;
       try {
-        await axios.post('http://localhost:4001/upload', data);
+        await axios.post('https://renaissens-back.adaptable.app/upload', data);
       } catch (err) {}
     }
     try {
-      const res = await axios.post('http://localhost:4001/create/events', newPost);
+      const res = await axios.post('https://renaissens-back.adaptable.app/create/events', newPost);
       alert("nouvel évènement créé")
       navigate(`/dashboard/`);
       window.location.reload(true);

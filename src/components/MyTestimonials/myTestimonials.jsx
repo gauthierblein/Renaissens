@@ -7,7 +7,7 @@ import '../../components/MyPosts/myPosts'
 
 
 function MyTestimonials() {
-    const PF = "http://localhost:4001/uploads/";
+    const PF = "https://renaissens-back.adaptable.app/uploads/";
 
     const [myPosts, setMyPosts] = useState(null);
     const [updatedPost, setUpdatedPost] = useState(
@@ -23,14 +23,14 @@ function MyTestimonials() {
     const handleShow = () => setShow(true);
 
     useEffect(() => {
-        axios.get('http://localhost:4001/testimonials').then((response) => {
+        axios.get('https://renaissens-back.adaptable.app/testimonials').then((response) => {
           setMyPosts(response.data);
         });
       }, []);
 
       const deletePost = (id) => {
         console.log(id)
-        axios.delete(`http://localhost:4001/deletetestimonial/${id}`)
+        axios.delete(`https://renaissens-back.adaptable.app/deletetestimonial/${id}`)
             .then((res) => console.log(res))
             .catch((err) => console.log(err))
         window.location.reload()
@@ -61,7 +61,7 @@ function MyTestimonials() {
       };
 
       const saveUpdatedPost = () => {
-        axios.put(`http://localhost:4001/updatetestimonial/${updatedPost.id}`, updatedPost)
+        axios.put(`https://renaissens-back.adaptable.app/updatetestimonial/${updatedPost.id}`, updatedPost)
             .then((res) => console.log(res))
             .catch((err) => console.log(err))
         handleClose();

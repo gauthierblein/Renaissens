@@ -6,11 +6,11 @@ import  "./testimonials.css"
 
 const Testimonials = () => {
 
-    const PF = "http://localhost:4001/uploads/";
+    const PF = "https://renaissens-back.adaptable.app/uploads/";
     const [Testimonials, setTestimonials] = useState(null);
   
     useEffect(() => {
-        axios.get('http://localhost:4001/testimonials/').then((response) => {
+        axios.get('https://renaissens-back.adaptable.app/testimonials/').then((response) => {
             setTestimonials(response.data);
             console.log(response)
         });

@@ -16,6 +16,7 @@ import image from '../../assets/img/renaissens-banner.jpg'
 
 function Home() {
 
+  console.log(process.env)
   const slogan = "Prendre un temps de réflexion pour mettre plus de sens dans nos actions"
 
   return (

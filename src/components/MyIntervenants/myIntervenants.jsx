@@ -23,14 +23,14 @@ function MyIntervenants() {
     const handleShow = () => setShow(true);
 
     useEffect(() => {
-        axios.get('http://localhost:4001/intervenants').then((response) => {
+        axios.get('https://renaissens-back.adaptable.app/intervenants').then((response) => {
           setMyPosts(response.data);
         });
       }, []);
 
       const deletePost = (id) => {
         console.log(id)
-        axios.delete(`http://localhost:4001/deleteintervenant/${id}`)
+        axios.delete(`https://renaissens-back.adaptable.app/deleteintervenant/${id}`)
             .then((res) => console.log(res))
             .catch((err) => console.log(err))
         window.location.reload()
@@ -62,7 +62,7 @@ function MyIntervenants() {
       };
 
       const saveUpdatedPost = () => {
-        axios.put(`http://localhost:4001/updateintervenant/${updatedPost.id}`, updatedPost)
+        axios.put(`https://renaissens-back.adaptable.app/updateintervenant/${updatedPost.id}`, updatedPost)
             .then((res) => console.log(res))
             .catch((err) => console.log(err))
         handleClose();
