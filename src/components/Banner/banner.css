@@ -42,7 +42,11 @@
     top: 20%;
     left:5%;
     gap: 1rem;
-    color: white
+    color: white;
+}
+.socialMedias a{
+    text-decoration: none;
+    color: white;
 }
 .socialMedias-link:hover {
     transition: .3s ease;

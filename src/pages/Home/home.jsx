@@ -2,7 +2,7 @@ import { Link } from "react-scroll"
 
 import Header from "../../components/Header/header"
 import Banner from "../../components/Banner/banner"
-import About from "../../components/About/index"
+import About from "../../components/About/about"
 import Actu from "../../components/Actu/actu"
 import Events from "../../components/Events/events"
 import Testimonials from "../../components/Testimonials/testimonials"

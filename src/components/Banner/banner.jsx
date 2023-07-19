@@ -1,6 +1,6 @@
 import './banner.css'
 import logo from '../../assets/img/renaissens-logo.png'
-import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaLinkedin, FaFacebook } from "react-icons/fa";
 
 
 function BannerHome ({ image, title }) {
@@ -11,9 +11,12 @@ function BannerHome ({ image, title }) {
           <h1>Renais'sens</h1>
           <p>{title}</p>
           <div className='socialMedias'>
-            <FaInstagram className='socialMedias-link' size={40} />
-            <FaFacebook className='socialMedias-link' size={40} />
-            <FaLinkedin className='socialMedias-link' size={40} />
+            <a href="https://www.facebook.com/Renaissons">
+              <FaFacebook className='socialMedias-link' size={40} />
+            </a>
+            <a href="https://www.linkedin.com/in/sandra-octuvon-b3865161/">
+              <FaLinkedin className='socialMedias-link' size={40} />
+            </a>
           </div>
         </div>
       

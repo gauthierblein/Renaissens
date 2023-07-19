@@ -1,7 +1,7 @@
 import { Link } from "react-scroll"
 import Header from "../../components/Header/header"
 import IntervenantsList from "../../components/IntervenantsList/intervenantsList"
-import IntervenantsDiapoCopy from "../../components/IntervenantsDiapo/intervenantsDiapo"
+import IntDiaporama from "../../components/IntDiaporama/intDiaporama"
 import SlideShow from "../../components/SlideShow/slideShow"
 import './partners.css'
 
@@ -30,7 +30,7 @@ import grandesTerresMain from '../../assets/img/lesGrandesTerres-main.jpg'
         <div name="intervenants" className="partners">
           <div name="intervenants" className="partner">
             <h2>Intervenants</h2>
-            <IntervenantsDiapoCopy />
+            <IntDiaporama />
             <IntervenantsList />
           </div>
 
